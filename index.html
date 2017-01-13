@@ -5,23 +5,23 @@
  <link rel = "stylesheet"
    type = "text/css"
    href = "territory.css" />
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 <script src="territory.js"></script>
 </head>
 <body>
 <div class="dropdown">
-  <button onclick="myFunction()" class="dropbtn">Search By...</button>
-  <div id="myDropdown" class="dropdown-content">
-    <a href="#">Publisher By</a>
-    <a href="#">Area</a>
-    <a href="#">Last Worked</a>
+  <button onclick="mySearchFunction()" class="dropbtn" id="searchbtn">Search By...</button>
+
+  <div id="mySearchDropdown" class="dropdown-content">
+    <a href="#" onclick="updateCriteria(1)">Publisher</a>
+    <a href="#" onclick="updateCriteria(2)">Area</a>
+    <a href="#" onclick="updateCriteria(3)">Last Worked</a>
   </div>
 </div>
 <div class="dropdown">
-  <button onclick="myFunction()" class="dropbtn">Criteria</button>
-  <div id="myDropdown" class="dropdown-content">
-    <a href="#">Publisher By</a>
-    <a href="#">Area</a>
-    <a href="#">Last Worked</a>
+  <button onclick="myCriteriaFunction()" class="dropbtn" id="criteriabtn">Criteria</button>
+  <div id="myCriteriaDropdown" class="dropdown-content">
+  //to be filled by the click of the search button
   </div>
 </div>
 </body>
